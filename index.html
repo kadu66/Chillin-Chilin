@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chillin Chillin</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <nav>
+            <img src="./logo.jpg" alt="" class="logo">
+            <ul>
+                <li><a href="#" id="models"> Lojas</a></li>
+                <li><a href="#" id="model3"> Sundays</a></li>
+                <li><a href="#" id="modelx"> Milkshake</a></li>
+                <li><a href="#" id="modely"> Banana Spilt</a></li>
+            </ul>
+            <a href="#" class="btn">Compre Agora</a>
+        </nav>
+        <div class="info">
+            <div>
+                <h2 id="seg">Kibon</h2>
+                <p>Sabores</p>
+            </div>
+            <div>
+                <h2 id="mph">Ben & Jerrys</h2>
+                <p>Sabores</p>
+            </div>
+            <div> 
+                <h2 id="mi">Bacio di latte</h2>
+                <p>Sabores</p>
+            </div>
+            <div class="line"></div>
+            <div>
+                <h2 id="model">Chillim Chillin</h2>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let header = document.getElementById('header')
+    let ms = document.getElementById('models')
+    let m3 = document.getElementById('model3')
+    let mx = document.getElementById('modelx')
+    let my = document.getElementById('modely')
+    let model = document.getElementById('model')
+    let seg = document.getElementById('seg')
+    let mph = document.getElementById('mph')
+    let mi = document.getElementById('mi')
+
+    ms.onclick = function(){
+        header.style.background = "url(./loja.jpg)"
+        model.innerHTML = "Model S"
+        srg.innerHTML = "1.9 s"
+        mph.innerHTML ="200 mph"
+        mi.innerHTML = "296 mi"
+    }
+
+    m3.onclick = function(){
+        header.style.backgroundImage = "url(Sundae.png)"
+        model.innerHTML = "Model 3"
+        srg.innerHTML = "3.1 s"
+        mph.innerHTML ="180 mph"
+        mi.innerHTML = "409 mi"
+    }
+    mx.onclick = function(){
+        header.style.backgroundImage = "url(mikks.png)"
+        model.innerHTML = "Model 3"
+        srg.innerHTML = "2.5 s"
+        mph.innerHTML ="155 mph"
+        mi.innerHTML = "333 mi"
+    }
+    my.onclick = function(){
+        header.style.backgroundImage = "url(banana.jpg)"
+        model.innerHTML = "Model Y"
+        srg.innerHTML = "3.5 s"
+        mph.innerHTML ="195 mph"
+        mi.innerHTML = "520 mi"
+    }
+    
+</script>
+</html>
